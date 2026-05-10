@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:task_6/home.dart';
+import 'package:task_6/about.dart';
 
 class News extends StatelessWidget {
   const News({super.key});
@@ -53,7 +54,12 @@ class News extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => About()),
+                );
+              },
               child: Text("Masuk"),
             ),
           ),
