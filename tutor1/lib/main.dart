@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tutor1/login.dart';
+import 'package:tutor1/halalamanapi.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,8 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HalLogin(),
-    );
+    return MaterialApp(home: HalApi());
   }
 }
